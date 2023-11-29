@@ -17,12 +17,12 @@ let newEle = fruitsBuffer.pop();
 console.log("M3: Last element of an array is "+newEle);
 
 //Method 4: Using Slice Method
-//Array Slice is a non-mutable method which creates new array
+//Array Slice is a non-mutable method which creates new array by taking copy of the element(s) from existing array.
 const newSlicedArray = fruits.slice(-1);
 console.log("M4: Last element of an array is "+newSlicedArray);
 
 //Method 5: Using ES6 Spread Operator and Splice Method
-//Array Splice is a mutable method which removes element(s) from existing array
+//Array Splice is a mutable method which creates a new array by removes element(s) from existing array
 const splicedArray = [...fruits]; //Take a copy of the array
 let newSplicedElement = splicedArray.slice(-1);
 console.log("M5: Last element of an array is "+newSplicedElement);
